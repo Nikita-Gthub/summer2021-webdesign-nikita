@@ -1,0 +1,25 @@
+
+student@DESKTOP-U7UCOI8 MINGW64 ~
+$ cd
+
+student@DESKTOP-U7UCOI8 MINGW64 ~
+$ cd/desktop/summer2021-webdesign-nikita
+bash: cd/desktop/summer2021-webdesign-nikita: No such file or directory
+
+student@DESKTOP-U7UCOI8 MINGW64 ~
+$ cd ~/desktop/summer2021-webdesign-nikita
+
+student@DESKTOP-U7UCOI8 MINGW64 ~/desktop/summer2021-webdesign-nikita
+$ mkdir homework
+
+student@DESKTOP-U7UCOI8 MINGW64 ~/desktop/summer2021-webdesign-nikita
+$ cd homework
+
+student@DESKTOP-U7UCOI8 MINGW64 ~/desktop/summer2021-webdesign-nikita/homework
+$ touch homework1-2.txt
+
+student@DESKTOP-U7UCOI8 MINGW64 ~/desktop/summer2021-webdesign-nikita/homework
+$ ^C
+
+student@DESKTOP-U7UCOI8 MINGW64 ~/desktop/summer2021-webdesign-nikita/homework
+$
