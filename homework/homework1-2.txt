@@ -22,4 +22,4 @@ student@DESKTOP-U7UCOI8 MINGW64 ~/desktop/summer2021-webdesign-nikita/homework
 $ ^C
 
 student@DESKTOP-U7UCOI8 MINGW64 ~/desktop/summer2021-webdesign-nikita/homework
-$
+$ 
