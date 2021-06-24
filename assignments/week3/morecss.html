@@ -11,24 +11,57 @@
 
 body {background-color:blanchedalmond;}
 
+/* Specificity Values One Element = 1 point (img)
+ One Class  = 10 points  1 id = 100 points */
 img {height: 200px;
     border-width: 5px;
     border-style: solid;
     border-color: burlywood;
-    border-radius: 15px;}
+    border-radius: 20px;}
 
+/* select a class needs to start with a period. A class can be applied to multiple elements. */
 .portrait {border-color: lightcoral;}
+
+/* select an id needs to start with a hash symbol. An unique ID can be only applied to one element. */
+#sun {box-shadow: 10px 10px grey;}
+
+div {background-color: darkseagreen;
+    width: 600px;
+    border: green solid 5px;
+    border-radius: 10px;
+    color: red;}
+
+div h1 {color: grey;}
+
+body div .portrait {border-color: cornflowerblue;}
+
+#happy {color: mediumvioletred;
+        text-decoration: line-through;}
 
         </style>
     </head>
 
     <body>
         <h1>My favorite sad photo</h1>
-        <img class="portrait" src="flowers.jpg" alt="a colorful bouquet sitting on a lady's leg." />
-        <img src="road to the montain.jpg" alt="Cars driving to the montain." />
-        <a href="https://google.com" target="_blank"><img class="portrait" src="newspaperfire.jpg" alt="Man with his mask, reading a newspaper that is on fire." /></a>
-        <img src="redsun.jpg" alt="Dark foggy or smoggy sky with a red sun." />
-
         
+        <img class="portrait" src="flowers.jpg" alt="a colorful bouquet sitting on a lady's leg." />
+
+        <img src="road to the montain.jpg" alt="Cars driving to the montain." />
+        
+        <a href="https://google.com" target="_blank"><img class="portrait" src="newspaperfire.jpg" alt="Man with his mask, reading a newspaper that is on fire." /></a>
+        
+        <img id="sun" src="redsun.jpg" alt="Dark foggy or smoggy sky with a red sun." />
+        
+        <div>
+            <h1>My favorite <span id="happy">happy</span> photo</h1>
+        
+            <img class="portrait" src="flowers.jpg" alt="a colorful bouquet sitting on a lady's leg." />
+    
+            <img src="road to the montain.jpg" alt="Cars driving to the montain." />
+            
+            <a href="https://google.com" target="_blank"><img class="portrait" src="newspaperfire.jpg" alt="Man with his mask, reading a newspaper that is on fire." /></a>
+            
+            <img id="sun" src="redsun.jpg" alt="Dark foggy or smoggy sky with a red sun." />
+        </div>
     </body>
 </html>
