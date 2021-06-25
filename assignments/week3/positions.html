@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS Positions</title>
+
+        <style>
+/*difference btw absolute and reletive: abs starts from its parents' position, but rlt starts from its original position. */
+body {
+    border: 5px solid black;
+    height: 10000px;
+}
+
+#red, #blue, #green {
+    width: 200px;
+    height: 200px;
+}
+
+#red {
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    margin-top: 100px;
+    /* margin-left: 100px; */
+}
+
+#blue {
+    background-color: blue;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    margin-top: 100px;
+}
+
+#green {
+    background-color: green;
+}
+        </style>
+    </head>
+
+    <body>
+
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+
+    </body>
+</html>
