@@ -7,7 +7,7 @@
 
         <style>
             #container {
-                width: 700px;
+                width: 900px;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -19,22 +19,53 @@
                 font-family: "Arial";
                 font-size: 24px;
                 text-transform: uppercase;
+                border-radius: 14px;
+            }
+            #header h1 {
+                margin-block-end: 0;
             }
 
             #main {
-                background-color:skyblue;
-                color: midnightblue;
+                margin-top: 28px;
+                padding: 28px;
+                background-color: midnightblue;
+                color: white;
                 font-family: "Arial";
                 font-size: 28px;
                 border-radius: 14px;
-            
+                line-height: 42px;
+                text-align:justify;
+                word-spacing: normal;          
             }
             #main p {
                 margin-block-start: 0;
             }
 
+            #main #article {
+                display: inline-block;
+                width: 616px;
+                padding-right: 28px;
+            }
+
+            #main #section {
+                display: inline-block;
+                width: 200px;
+                height: 200px;
+                background-color: orangered;
+                vertical-align: top;
+                border-radius: 14px;
+            }
+
             #footer {
+                margin-top: 28px;
                 background-color:rosybrown;
+                height: 28px;
+                border-radius: 14px;
+                text-align: center;
+                text-align: center;
+                text-transform: uppercase;
+                color: white;
+                font-family: "Arial";
             }
 
         </style>
@@ -49,9 +80,12 @@
             </div>
 
             <div id="main">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, iste iure cupiditate voluptatum obcaecati delectus? Corrupti omnis unde est possimus consectetur illo voluptas culpa dolorem? Nesciunt illo veniam inventore beatae.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vero necessitatibus nesciunt vitae corrupti neque quibusdam nobis quia odio beatae repudiandae ex ipsam cum sed consequatur, inventore earum rem tempora?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam autem, voluptates mollitia obcaecati sunt aspernatur praesentium dolor veritatis excepturi. Vitae dolorum laboriosam velit voluptatibus voluptates eligendi repellat eius adipisci porro!</p>
+                <div id="article">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, iste iure cupiditate voluptatum obcaecati delectus? Corrupti omnis unde est possimus consectetur illo voluptas culpa dolorem? Nesciunt illo veniam inventore beatae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vero necessitatibus nesciunt vitae corrupti neque quibusdam nobis quia odio beatae repudiandae ex ipsam cum sed consequatur, inventore earum rem tempora?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam autem, voluptates mollitia obcaecati sunt aspernatur praesentium dolor veritatis excepturi. Vitae dolorum laboriosam velit voluptatibus voluptates eligendi repellat eius adipisci porro!</p>
+                </div><div id="section"></div>
+
             </div>
 
             <div id="footer">
