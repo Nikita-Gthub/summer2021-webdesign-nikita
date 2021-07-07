@@ -36,6 +36,15 @@ h2 {
     width: 1200px;
     height: 36px;
 }
+div {
+    background-color:lightyellow;
+    color: red;
+    }
+#no-backgroud-color {background-color: azure;}
+span {
+    text-transform: uppercase;
+    }
+#never {color: teal;}
 h3,h4 {
     color:slateblue;
     font-size: 25px;
@@ -49,7 +58,6 @@ img {
     border-color: lightsteelblue;
     border-radius: 15px;
 }
-
 .my-photo {
     border-color:lightpink;
 }
@@ -66,9 +74,10 @@ img {
         <h2>A little bit of myself, my hobby, and why I enjoy doing it</h2>
         <!-- Miduem bold sub-sections of h1 - A Heading Level 2 element. -->
         <p>	My name is Nikita. Favorite interests, among many, include watching series, listening to music, hiking, photography, and sleeping. Once I was flipping through albums on my phone, and I realized that I have the hobby of capturing beautiful flowers and plants. The reason I think it's because I live in an area that vegetation flourishes all year round.</p>
-
+        
         <h2>Instructions on how to do my hobby</h2>
-        <h3>For someone that has never done this before</h3>
+        <div>
+        <h3>For someone that has <span>never done</span> this before</h3>
         <p>I'll give you my experience of how to use your iPhone to take good pictures without any editing or additional Apps. </p>
         <img src="step1-camera-scaling.jpg" alt="Photo of woman holding phone with a good camera">
         <img class="my-photo" src="step2-original-butterfly-scaling.jpg" alt="one hand catching a wing from a butterfly">
@@ -86,9 +95,11 @@ img {
             <li>Try out portrait mode to shoot indoor still-life, you may receive unexpected sharpness.</li>
             <li>Avoid pressing the photo button with a shaking hand. </li>
         </ol>
+        </div>
 
         <h2>Additional tips, Apps and online resources for you to check out</h2>
-        <h3>For people have done this many times before, but just cannot take pictures that satisfied you.</h3>
+        <div>
+        <h3>For people <span>have done</span> this many times before, but just cannot take pictures that satisfied you.</h3>
         <p>I'd like to share Two other tips that might be helpful for you. Tip 1, if you don't want to take outdoor pictures, you can create your own photoshop studio at home by grabbing some of your favorite gadgets together. It doesn't need to be fancy, just be innovative and fits your personal aesthetic insight. Tip 2, find the room in your house that has the most light. Again, if you don't want the follow-up work, adequate lighting is essential for you to take good photos. </p>
         <h4>Recommended Apps are </h4>
                 <ul>
@@ -98,15 +109,16 @@ img {
             </ul>
         <p>These Apps provide a slew of filters that you can play around and allow you to be more creative.</p>
         <p>If you would like to further develop your skills, welcome to check out this this <a href="https://iphonephotographyschool.com/nature-close-up" target="_blank">link</a> and watch this <a href="https://www.youtube.com/watch?v=D-n6kbasars" target="_blank">video</a> to learn more about how to take good close-up through your iPhone. Please feel free to leave any comments to me and thank you for browsing!</p>
+        </div>
 
         <h3>Reference list</h3>
-        <ul>
+        <div>
+        <ul id="no-backgroud-color">
             <li>&copy; Cat Cliffe <a href="https://iphonephotographyschool.com/nature-close-up">https://iphonephotographyschool.com/nature-close-up</a></li>
             <li>&copy; snap snap snap <a href="https://www.youtube.com/watch?v=D-n6kbasars">https://www.youtube.com/watch?v=D-n6kbasars</a></li>
         </ul>
+        </div>
         
-        
-
     </body>
 
 </html>
