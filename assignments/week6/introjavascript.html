@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"  />
+        <title>Introduction to JavaScript</title>
+        <style>  /* comment for CSS  Syntax */  </style>
+    </head>
+
+    <body>
+        <!-- comment for html -->
+
+        <script>    // Anything btw the script element is JS - JavaScript
+           
+           /* 
+            Multi-line
+            comment  
+            */
+
+            // Single-line comment 
+
+            // console.log() is used to pass a value to the Console. The value passed is inside of the parathesis.
+
+            console.log(1000);        // Numbers are in green
+            
+            console.log("hello" );    // Strings are in orange
+            console.log("goodbye");
+            
+            console.log(false);       //Booleans are in blue
+
+            /*  Datatypes: 3 values can put in the parathesis: 
+            Strings (can hold anyting), Numbers, Booleans (true or false) .*/
+            "This is a string";       1800000;    true;
+
+            // Think about what is the datatype of the following?
+            "190000";     // a string
+            190000;       // a number
+            "    ";       // a string, a space keep in mind a string can hold anyting
+            "true";       // a string 
+            true;         // a boolean
+
+
+            // + Addition and Concatenation (sticking things together)
+            console.log(1 + 1);               // 2  addition
+            console.log("1" + "1");           // 11 concatenation
+            console.log("Hello" + " There");  // Hello There concatenation
+            console.log("Hello There");       // Hello There   a string
+
+            // - Subtraction
+            console.log(10 - 9);
+            console.log(9 - 10);
+
+            // x Multiplayer, asterisk symbol
+            console.log(100 * 100);
+
+            // ÷ Division, forward slash 
+            console.log(90 / 5);
+            console.log(5 / 90);
+
+            // % Modulus, Percentage sign
+            console.log(90 % 5);
+            console.log(90 % 11);
+
+            console.log(10 + 50 / 40 * 90);
+
+            /* Bodmas: correctly perform the order of operations
+            BODMAS stands for Brackets, Orders, Division/Multiplication, Addition, and Subtraction.
+            PEMDAS refers to Parenthesis, Exponents, Multiplication, Division, Addition, and Subtraction. Always perform what in the parentheses first */
+            10 * 10 / (5 + 1);   10 * 10 / 5 + 1;
+            console.log(10 * 10 / (5 + 1));
+            console.log(10 * 10 / 5 + 1);
+
+            // Coercion, forcing a datatype to be another datatype.
+            console.log(100 + "100"); // "100100"
+
+            // parseInt("string") function, attempts to convert a String into a number. only looks for numbers. Int stands for integer and it'll igonre period.
+            console.log(100 + parseInt("100")); // 200
+
+            console.log(parseInt("hello")); // NaN
+            console.log(parseInt("10hello10")); // 10
+            console.log(parseInt("10.10hello"));// 10
+            console.log(parseInt("hello10")); // NaN
+
+        </script>
+    </body>
+</html>
