@@ -35,11 +35,13 @@
             "190000";     // a string
             190000;       // a number
             "    ";       // a string, a space keep in mind a string can hold anyting
-            "true";       // a string 
+            "true";       // a string cuz this is warped in quote
             true;         // a boolean
 
 
-            // + Addition and Concatenation (sticking things together)
+            /* + Addition and Concatenation (sticking things together). 
+            If they are numbers, we are doing math. 
+            If they are strings, we are gluing them together. */
             console.log(1 + 1);               // 2  addition
             console.log("1" + "1");           // 11 concatenation
             console.log("Hello" + " There");  // Hello There concatenation
@@ -79,6 +81,47 @@
             console.log(parseInt("10hello10")); // 10
             console.log(parseInt("10.10hello"));// 10
             console.log(parseInt("hello10")); // NaN
+
+            /* Variable are used to holding data that CAN change.
+            Notice space is not allowed, there is no space btw the name itself  */
+            var myFirstVariable = "hi";
+            console.log(myFirstVariable);
+
+            // Hard-coding means the code will never change.
+            console.log("hello");
+
+            // Using Variables
+            var number1 = 10;
+            var number2 = 5;
+
+            console.log(10 + 5);
+
+            // Variable can be "called" as many times as you want 
+            console.log(number1 + number2);
+            console.log(number1 * number2);
+            console.log(number1 * number1 + number1 / number1 + number1);
+
+            // Variables can hold only 1 value, the previous value "10" will dissappear and be replaced by "20".
+            number1 = 20;
+
+            // The equal sign is not the MATH EQUAL. It is the assignment operator.
+            var number3 = 2;
+            console.log(number1 * number2 + number3);
+            var number4 = number1;
+            
+            // Code on the right side of the assignment operator will happen first.
+            number4 = number4 + 1; // 21
+            number1 = 30;          // still 21 cuz JS reads from top to bottom
+            console.log(number4);
+
+            var num1 = 1;
+            var num2 = 2;
+            var num3 = 3;
+            var num4 = num1; // Called num1 here which is holding the value 1 and NOT 10, as that happens AFTER.
+            num1 = 10;
+            console.log(num4); // 1
+
+
 
         </script>
     </body>
