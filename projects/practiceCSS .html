@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE is to declare what version of html this document is using, html=HTML5 -->
+<html lang="en">
+<!-- the html element should ONLY have 2 children, the head and body. -->
+    <head>
+    <!-- the head element is for html elements that TALK ABOUT the html document. -->
+        <meta charset="utf-8"  />
+        <!-- tells the browser what character set we use in this html file. -->
+        <title>Hobby Web Page Project</title>
+        <!--import Google font: Acme 
+        CSS rule  font-family: 'Acme', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        
+        <!--import Google font: Otomanopee One 
+        CSS rule  font-family: 'Otomanopee One', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Otomanopee+One&display=swap" rel="stylesheet">
+
+        <style>  /* comment for CSS  Syntax */
+/* CSS Ruleset is using Selectors to style elements and it's important to have both opening and closing { curly braces } around each element's style rule.
+Selector {
+    Property Name: value;
+    Property Name: value;  always add a semicolon at the end
+} */
+
+body {background-color:azure;}
+p {
+    color:tomato;
+    font-size: 22px;
+    font-family: "Otomanopee One", Arial;
+}
+h1 {
+    color:darkmagenta;
+    text-align: center;
+    font-size: 52px;
+    font-style:italic;
+    font-family: "Acme", Apple Chancery;
+    width: auto;
+    height: 66px;
+}
+h2 {
+    color:orangered;
+    font-size: 36px;
+    font-family: "Acme", Apple Chancery;
+    width: 1200px;
+    height: 36px;
+}
+div {
+    background-color:lightyellow;
+    font-size: 19px;
+    color: red;
+    }
+#without-yellow-backgroud {background-color: azure;}
+span {
+    color: teal;
+    text-transform: uppercase;
+    }
+h3,h4 {
+    color:slateblue;
+    font-size: 25px;
+    font-family: "Otomanopee One", Arial;
+    height: 26px;
+}
+img {
+    height: 160px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: lightsteelblue;
+    border-radius: 15px;
+}
+.my-photo {
+    border-color:lightpink;
+}
+
+/* Practices: change orederedlist and images display  */
+ol {
+    color: blueviolet;
+    font-size: 20px;
+    font-family: "Otomanopee One", Arial;;
+    
+}
+.listed {
+    vertical-align: top;
+    display:inline-block;
+}
+
+        </style>
+
+    </head>
+
+    <body>
+    <!-- the body element is for html elements to be displayed in the browser. -->
+
+        <h1>My Hobby</h1>
+        <!-- Large bold title - Heading Level 1 HTML Element -->
+        <h2>A little bit of myself, my hobby, and why I enjoy doing it</h2>
+        <!-- Miduem bold sub-sections of h1 - A Heading Level 2 element. -->
+        <p>	My name is Nikita. Favorite interests, among many, include watching series, listening to music, hiking, photography, and sleeping. Once I was flipping through albums on my phone, and I realized that I have the hobby of capturing beautiful flowers and plants. The reason I think it's because I live in an area that vegetation flourishes all year round.</p>
+        
+        <h2>Instructions on how to do my hobby</h2>
+        <div>
+        <h3>For someone that has <span>never done</span> this before</h3>
+        <p>I'll give you my experience of how to use your iPhone to take good pictures without any editing or additional Apps. </p>
+        <img src="step1-camera-scaling.jpg" alt="Photo of woman holding phone with a good camera">
+        <img class="my-photo" src="step2-original-butterfly-scaling.jpg" alt="one hand catching a wing from a butterfly">
+        <img class="my-photo" src="step2-original-succulent-sscaling.jpg" alt="a lovely bonsai made from baby succulents">
+        <img src="step3-studio-lighting-scaling.jpg" alt="several bright camera lights in a dark studio">
+        <img src="step4-angle-scaling.jpg" alt="a person holding a phone and squating to get the best shooting angle">
+        <img class="my-photo" src="step5-original-bouquet-scaling.jpg" alt="a cluster of yellow bouquet in a vase on a table">
+        <img class="my-photo" src="step5-original-squirrel-scaling.jpg" alt="a close-up of a squirrel looking back">
+        <img src="step6-shutter-button-scaling.jpg" alt="a lady holding iPhone, her finger coming from the iphone pressing the shutter button">
+        <ol>
+            <li>Your phone must have a good camera with a decent lens.</li>
+            <li>Find something unique or attractive for your eyeballs that engages you to take a close-up for it.</li>
+            <li>Check if the lightning of the environment is appropriate (neither too dark nor bright) for you to take a good picture. I found my phone doesn't perform well when taking photos at night. </li>
+            <li>You need to change your position in order to get a perfect angle to capture your object.</li>
+            <li>Try out portrait mode to shoot indoor still-life, you may receive unexpected sharpness.</li>
+            <li>Avoid pressing the photo button with a shaking hand. </li>
+        </ol>
+        </div>
+
+        <h2>Additional tips, Apps and online resources for you to check out</h2>
+        <div>
+        <h3>For people <span>have done</span> this many times before, but just cannot take pictures that satisfied you.</h3>
+        <p>I'd like to share Two other tips that might be helpful for you. Tip 1, if you don't want to take outdoor pictures, you can create your own photoshop studio at home by grabbing some of your favorite gadgets together. It doesn't need to be fancy, just be innovative and fits your personal aesthetic insight. Tip 2, find the room in your house that has the most light. Again, if you don't want the follow-up work, adequate lighting is essential for you to take good photos. </p>
+        <h4>Recommended Apps are </h4>
+                <ul>
+                    <li>BeautyPlus</li> 
+                    <li>Focos</li>
+                    <li>YouCam Perfect. </li>
+            </ul>
+        <p>These Apps provide a slew of filters that you can play around and allow you to be more creative.</p>
+        <p>If you would like to further develop your skills, welcome to check out this this <a href="https://iphonephotographyschool.com/nature-close-up" target="_blank">link</a> and watch this <a href="https://www.youtube.com/watch?v=D-n6kbasars" target="_blank">video</a> to learn more about how to take good close-up through your iPhone. Please feel free to leave any comments to me and thank you for browsing!</p>
+        </div>
+
+        <h3>Reference list</h3>
+        <div>
+        <ul id="without-yellow-backgroud">
+            <li>&copy; Cat Cliffe <a href="https://iphonephotographyschool.com/nature-close-up">https://iphonephotographyschool.com/nature-close-up</a></li>
+            <li>&copy; snap snap snap <a href="https://www.youtube.com/watch?v=D-n6kbasars">https://www.youtube.com/watch?v=D-n6kbasars</a></li>
+        </ul>
+        </div>
+        
+
+
+<!-- Practices: put one or two images under its list by create <div class="listed">, then use CSS to apply vertical-align: top; display:inline-block; to put one or two images next to its list -->
+        <div>
+            <p style="line-break:normal">Below are practices on embeding 1 or 2 pictures next to its orderedlist </p>
+        </div>
+        <ol>
+            <li>Your phone must have a good camera with a decent lens.
+                <div class="listed">
+                    <img src="step1-camera-scaling.jpg" alt="Photo of woman holding phone with a good camera">
+                </div>
+            </li>
+
+            <li>Find something unique or attractive for your eyeballs that engages you to take a close-up for it.
+                <div class="listed">
+                    <img class="my-photo" src="step2-original-butterfly-scaling.jpg" alt="one hand catching a wing from a butterfly">
+                    <img class="my-photo" src="step2-original-succulent-sscaling.jpg" alt="a lovely bonsai made from baby succulents">
+                </div>  
+            </li>
+
+            <li>Check if the lightning of the environment is appropriate (neither too dark nor bright) for you to take a good picture. I found my phone doesn't perform well when taking photos at night.
+                <div class="listed">
+                    <img src="step3-studio-lighting-scaling.jpg" alt="several bright camera lights in a dark studio">
+                </div>
+            </li>
+
+            <li>You need to change your position in order to get a perfect angle to capture your object.
+                <div class="listed">
+                    <img src="step4-angle-scaling.jpg" alt="a person holding a phone and squating to get the best shooting angle">
+                </div>
+            </li>
+
+            <li>Try out portrait mode to shoot indoor still-life, you may receive unexpected sharpness.
+                <div class="listed">
+                    <img class="my-photo" src="step5-original-bouquet-scaling.jpg" alt="a cluster of yellow bouquet in a vase on a table">
+                    <img class="my-photo" src="step5-original-squirrel-scaling.jpg" alt="a close-up of a squirrel looking back">  
+                </div>
+            </li>
+
+            <li>Avoid pressing the photo button with a shaking hand. 
+                <div class="listed">
+                    <img src="step6-shutter-button-scaling.jpg" alt="a lady holding iPhone, her finger coming from the iphone pressing the shutter button">
+                </div>
+            </li>
+
+        </ol>
+    </body>
+
+</html>
+
+
+
+
+
+        
+

@@ -20,12 +20,12 @@
 
             // console.log() is used to pass a value to the Console. The value passed is inside of the parathesis.
 
-            console.log(1000);        // Numbers are in green
-            
+            console.log(1000);        // Numbers are in green 
             console.log("hello" );    // Strings are in orange
             console.log("goodbye");
-            
             console.log(false);       //Booleans are in blue
+            console.log("This is the first line\nAnd this is the second");
+             // \n produces a new line
 
             /*  Datatypes: 3 values can put in the parathesis: 
             Strings (can hold anyting), Numbers, Booleans (true or false) .*/
@@ -46,6 +46,8 @@
             console.log("1" + "1");           // 11 concatenation
             console.log("Hello" + " There");  // Hello There concatenation
             console.log("Hello There");       // Hello There   a string
+
+            // We prefer to put a space between operators, it's not necessary but it makes easier to read the code.
 
             // - Subtraction
             console.log(10 - 9);
@@ -77,10 +79,10 @@
             // parseInt("string") function, attempts to convert a String into a number. only looks for numbers. Int stands for integer and it'll igonre period.
             console.log(100 + parseInt("100")); // 200
 
-            console.log(parseInt("hello")); // NaN
+            console.log(parseInt("hello")); // NaN stands for nut a number, even though it's a value of the numver type.
             console.log(parseInt("10hello10")); // 10
             console.log(parseInt("10.10hello"));// 10
-            console.log(parseInt("hello10")); // NaN
+            console.log(parseInt("hello10")); // NaN stands for nut a number
 
             /* Variable are used to holding data that CAN change.
             Notice space is not allowed, there is no space btw the name itself  */
@@ -295,7 +297,7 @@
             0;
             1;
             " ";
-            NaN;
+            NaN; //stands for nut a number, even though it's a value of the number type.
             false;
             null;
             undefined;
@@ -359,6 +361,75 @@
                 }
 
             }
+
+            // Nesting loops: each loop has to run its inner code, then pass the specific loop to the next loop
+
+            for (var i = 0; i < 10; i = i + 1) {
+                
+                for (var e = 0; e < 10; e = e + 1) {
+
+                    for (var o = 0; o < 10; o = o + 1) {
+                        // With nested loops, code may run many more times than one believes! Hello will be console logged 1000 times.
+                        console.log("hello"); 
+                    }
+                }
+            } 
+            // The ending curly braces are important cuz it tells the function when it's done where to end.
+
+            // Function, group of code that runs when function name is CALLED.
+
+            function myFirstFunction() {
+                console.log("*");
+                console.log("**");
+                console.log("*");
+
+                for (var i = 0; i < 10; i = i +1) {
+                    console.log("$");
+                }
+            }
+            // call the function as name();
+            myFirstFunction();
+            myFirstFunction(); 
+            myFirstFunction(); // You can run a function as many time as you want, or we can use a loop to run it 100 times
+
+            for (var i = 0; i < 100; i = i + 1) {
+                myFirstFunction();
+            }
+
+            console.log("Done!");
+
+            // Scopes 
+
+            var a = "hello";
+
+            function mySecondFunction() { // console.log will first look for vara inside the scope, if it doesn't find any vars, it'll look for vars outside the scope. 
+                var a = "goodbye";
+                var b = "good day";
+                console.log(a);
+            }
+            // We cannot access b variables cuz it's in a private scope, it's inside a private scope so cannot call it form outside.
+            //console.log(b);
+            
+            // console.log(a);
+
+            mySecondFunction();
+
+            // USEFUL VARIABLE AND FUNCTION NAMES. Naming doesn't matter with computer but it does matter with hunmans.
+            var a = 19;
+            var age = 19;
+            // userAge would be the best name of this set.
+            var userAge = 19;
+            var 
+            aValueThatIsReallyImportantToAnIndividualBecauseItSignifiesHowLongTheyHaveLived = 19; // This has too much info and is annoying.
+
+            function a() {}
+
+            function someFunction() {}
+            function add2Numbers() {} // Best naming of this set
+            function accepts2NumbersAndAddsThemTogether() {}
+
+
+
 
 
         </script>
