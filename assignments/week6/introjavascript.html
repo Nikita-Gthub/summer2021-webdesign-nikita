@@ -18,6 +18,9 @@
 
             // Single-line comment 
 
+            /* In browsers, the output lands in the JavaScript console.
+            This part of the browser interface is hidden by default, but most browsers open it when you press F12 or, on a Mac, command-option-I. If that does not work, search through the menus for an item named Developer Tools or similar. */
+
             // console.log() is used to pass a value to the Console. The value passed is inside of the parathesis.
 
             console.log(1000);        // Numbers are in green 
@@ -79,14 +82,15 @@
             // parseInt("string") function, attempts to convert a String into a number. only looks for numbers. Int stands for integer and it'll igonre period.
             console.log(100 + parseInt("100")); // 200
 
-            console.log(parseInt("hello")); // NaN stands for nut a number, even though it's a value of the numver type.
+            console.log(parseInt("hello")); // NaN not a number
             console.log(parseInt("10hello10")); // 10
             console.log(parseInt("10.10hello"));// 10
-            console.log(parseInt("hello10")); // NaN stands for nut a number
+            console.log(parseInt("hello10")); // NaN stands for not a number, even though it's a value of the numver type. 
+            // NaN denotes the result of a nonsensical computation, so it isn't equal to the result of any other nonsensical computations.
 
             /* Variable are used to holding data that CAN change.
             Notice space is not allowed, there is no space btw the name itself  */
-            var myFirstVariable = "hi";
+            var myFirstVariable = "hi"; //The standard JavaScript capitalizes every word except the first. It is not hard to get used to little things like that, and code with mixed naming styles can be jarring to read, so we follow this convention.
             console.log(myFirstVariable);
 
             // Hard-coding means the code will never change.
@@ -196,8 +200,10 @@
             true == false; // false
             true == true; // true
             false == false; // true
+            console.log(NaN == NaN); // false Nan stants for not a number and it's the only value in JS is not equal to itself.  
 
-            // !=, Must NOT (Not Equal To) be the same to be true, otherwise false.
+            // != not equal to 
+            // Must NOT Equal to be the same to be true, otherwise false.
             10 != 10; // false
             1 != 10; // true
             -10 != 10; // true
@@ -222,7 +228,7 @@
 
             // logical operators: && || ! Multiple 
 
-            // AND operator
+            // AND operator, it's a binary operator, and its result is true only if both the values given to it are true.
             true && false; // false
             true && true;  // true
             false && true; // false
@@ -231,15 +237,22 @@
             var number = 7;
             number > 5 && number < 10; // true
             
-            // OR operator
+            // OR operator denots logical or, it produces true if either of the values given to it is true.
             true || false; // true
             true || true; // true
             false || false // false
             number > 5 || number < 10; // true
 
-            // NOT operator
+            // NOT is a unary operator that flips the value given to it. !true gives false and !false gives true.
             !true; // false
             !false; // true
+
+            /*  ? # : #  Conditional operator or ternary operator. T
+            ernary, operating on three values. 
+            The value on the left of the question mark "picks" which of the other two values will come out. When it's true, it chooses the middle value and when it's false, it chooses the value on the right.
+            */
+           true ? 1 : 2;  // 1
+           false ? 1 : 2;  // 2
 
             // Multiple Logical Operators, left to right.
             true && false || true; // (true && false) || true
@@ -299,7 +312,8 @@
             " ";
             NaN; //stands for nut a number, even though it's a value of the number type.
             false;
-            null;
+            // empty values: null and undefined denote the absence of a meaningful value. They carry no information, like null and undefined are interchangable.
+            null;  
             undefined;
 
             var income2021 = null;
@@ -374,7 +388,7 @@
                     }
                 }
             } 
-            // The ending curly braces are important cuz it tells the function when it's done where to end.
+            // The ending curly braces are important cuz it tells the function where to end, and when it's done.
 
             // Function, group of code that runs when function name is CALLED.
 
@@ -428,9 +442,73 @@
             function add2Numbers() {} // Best naming of this set
             function accepts2NumbersAndAddsThemTogether() {}
 
+            // Arguments and Parameters
+            // Arguments are the data that WILL BE stored in a Parameter
+            // Parameter is a special variable that belongs to the function
+
+            function makeItRain(value){
+                // var strength = value;
+                var strength = value;
+                if (strength == 1) {
+                    console.log("A drizzle/sprinkle has started.");
+                } else if (strength == 2) {
+                    console.log("It started raining.");
+                } else if (strength == 3) {
+                    console.log("It's rainning cats and dogs.");
+                }
+            }
+            makeItRain(1);
+            makeItRain(2);
+            makeItRain(3);
+            makeItRain(4);  // we don't have 4
+
+            // Math. pow()  Math.pow(base, exponent)
+            // Math. sqrt()  Math.sqrt(x)
+            function hypotenuse(width, height) {
+                // var width = 10;  // In JS there're no units
+                // var height = 4;
+                
+                var squaredWidth = Math.pow(width, 2);
+                var squaredHeight = Math.pow(height, 2);
+                var squaredSum = squaredWidth + squaredHeight;
+                var results = Math.sqrt(squaredSum);
+                // Same code, but in a single line:
+                // console.log(Math.sqrt((Math.pow(width, 2) + Math.pow(height, 2))));
+                console.log(results);
+                // Gives you the hypothnuse of rectangel.
+            }
+            var result = hypotenuse(19, 11);
+            hypotenuse(4, 16);
+            console.log("Hello there");
+
+            // Returning Values from Functions
+            var myVar = 10;
+            // "Returning" a value form a variable is as easy as calling it.
+            myVar;
+
+            function exampleFunction() {
+                var a = 100;
+                var b = 50;
+                // allows the function to "send back" a single value.
+                // return a;
+                // return b;
+                return "Function has finished.";
+            }
+            var myNumber = exampleFunction();
+            console.log(myNumber);
+
+            // Putting it all together for Functions
+            function add2Numbers(number1, number2) {
+                var sum = number1 + number2;
+
+                return sum;
+            }
+            var myResults = add2Numbers(16, 5);
+            var sendToConsole = add2Numbers(myResults, myResults);
+            console.log(sendToConsole);
 
 
-
+            
 
         </script>
     </body>
