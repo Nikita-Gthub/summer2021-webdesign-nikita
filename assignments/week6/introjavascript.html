@@ -507,7 +507,9 @@
             var sendToConsole = add2Numbers(myResults, myResults);
             console.log(sendToConsole);
 
-            // Arrays & Objects
+            // Arrays Vs Variables
+            // Arrays hold date that are ralated to each other. 
+            // Variables can only hold one thing at a time.
             var thisIsAVariable = "One Thing";
 
             thisIsAVariable = "Another thing";
@@ -516,8 +518,8 @@
             var secondDay = "Tuesday";
             // etc.
 
-            // empty Array.
-            var myArray = [];
+            // empty Array. 
+            var myArray = []; 
 
             var mySecondArray = [1, 2, 3, 4, 5];
             //          Indexes: 0  1  2  3  4
@@ -616,6 +618,88 @@
 
             console.log(salaries);
 
+            // Objects have no index numbers.
+            // Objects only hode key value paries we don't put code into it.
+            // Objects are Values or Datatypes, they usually assigned something and need the semicolon to end the statement.
+            var myFirstObject = {};
+            // Code blocks usually end an IF, Loops, or Function, and they DON'T end with a semicolon.
+            if (false) {}
+
+            var mySecondObject = {
+                "name": "Eduardo", 
+                "age": 31
+            };
+
+            var myEmployee1 = ["Eduardo", 31, "part-time", "MEDA"];
+
+            var myEmployee2 = {
+                "name": "Eduardo",
+                "age":31,
+                "status": "part-time",
+                "employer": "MEDA",
+                "active": true,
+                "current position": "instructor",
+                "daysWorked": [14, 19, 20, 21],
+                "education": [
+                    {
+                        institution: "CCSF",
+                        years: 3,
+                        days: [18, 19, 20]
+                    },
+                    {
+                        institution: "Berkeley City College",
+                        years: 1
+                    }
+                ]
+            };
+            // Bracket Notation, needs to have a string datatype to access that value inside of the object.
+            myEmployee2.status;
+            myEmployee2.age;
+            console.log( myEmployee2["status"] );
+            // Dot notation, must be a string with No spaces, should Not use quotes. It's cleaner to read, but it won't work for keys have spaces.
+
+            // If your key has a space in it, you CANNOT use dot notation as it will cause a syntax error. Must use square bracket notation.
+            console.log(myEmployee2);
+
+            myEmployee2.name = "Edward";
+            myEmployee2["current position"] = "none";
+
+            console.log(myEmployee2);
+
+            myEmployee2.status = "full-time";
+            myEmployee2.salary = 50000;
+
+            console.log(myEmployee2);
+
+            // Objects: Properties & Methods.
+            // Properties are "variables" that belong to an object.
+            // Methods are "functions" that belong to an object.
+
+            // Functions without a name are Anonymous function. This "function" in the object can only be called by the key name instead.
+            var myThirdObject = {
+                myProperty: 10,
+                myMethod: function () {
+                    console.log("Hello");
+                }
+            };
+
+            console.log( myThirdObject.myProperty );
+
+            myThirdObject.myMethod();
+            console.log("hello");
+
+            Math.pow(10, 2);
+            Math.sqrt(100);
+
+            var anotherArray = [];
+
+            anotherArray.push("Something new");
+
+            // salaries.push();
+            // salaries.pop();
+            // salaries.unshift();
+            // salaries.shift();
+            salaries.length;
 
  
 
