@@ -503,12 +503,121 @@
 
                 return sum;
             }
-            var myResults = add2Numbers(16, 5);
+            var myResults = add2Numbers(7, 13);
             var sendToConsole = add2Numbers(myResults, myResults);
             console.log(sendToConsole);
 
+            // Arrays & Objects
+            var thisIsAVariable = "One Thing";
 
+            thisIsAVariable = "Another thing";
+
+            var firstDay = "Monday";
+            var secondDay = "Tuesday";
+            // etc.
+
+            // empty Array.
+            var myArray = [];
+
+            var mySecondArray = [1, 2, 3, 4, 5];
+            //          Indexes: 0  1  2  3  4
             
+            var myThirdArray = ["A", "B", "C"];
+            //                   0    1    2
+
+            // Array Indexes = an "address" of an item in an array.
+            // Array Element = an "item" in an Array.
+            // Indexes start from 0, not 1!
+
+            var myNum = mySecondArray[3];
+            console.log(myNum);
+
+            var myText = myThirdArray[1];
+            console.log(myText);
+
+            console.log(mySecondArray);
+
+            // Array Methods
+
+            // Getting the LAST value in an array. Also removes it from the Array.
+            console.log( myThirdArray.pop() );
+
+            console.log( myThirdArray );
+
+            // Putting a value at the END of the array.
+            myThirdArray.push("c");
+
+            console.log( myThirdArray );
+
+            // Getting the FIRST value in an array. Also removes it from the Array.
+            console.log( myThirdArray.shift() );
+
+            console.log( myThirdArray );
+
+            // Putting a value at the START of the array.
+            myThirdArray.unshift("a");
+
+            console.log( myThirdArray );
+        
+            // Also very useful, returns the total count of elements in that array.
+            console.log( myThirdArray.length );
+
+
+            var myRandomArray = [10, 600, "hello", true];
+            var myProperArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+            // Updating a single value in an Array.
+            var myEmployeeSalaries = [16000, 21000, 40000, 7000];
+            // Use the index when you are assigning the value, otherwise you will be replacing the ENTIRE array.
+            myEmployeeSalaries[1] = 23000;
+
+            // Multi-dimensional Arrays = when there are arrays within an array.
+
+            var mapShapeCoords = [
+                [14, 28],
+                [19, 36],
+                [8, 32]
+            ];
+
+            36;
+
+            mapShapeCoords[2][1]; // Access number 32.
+            mapShapeCoords[0][0]; // Access number 14.
+
+            // Updating number 8 to a number 9.
+            mapShapeCoords[2][0] = 9;
+
+            console.log(mapShapeCoords);
+
+            var sum = mapShapeCoords[0][0] + mapShapeCoords[2][1];
+
+            console.log(sum);
+
+
+            // Combining Loops and Arrays.
+
+            var salaries = [19900, 34998, 29990, 49976, 88944, 10000];
+            // Task: Add a 5% bonus for everyone.
+
+            // Bonus for 1 Salary START
+            var oldSalary = salaries[0];
+            var percentBonus = .05;
+            var newSalary = oldSalary + (oldSalary * percentBonus);
+
+            salaries[0] = newSalary;
+            // Bonus for 1 Salary END
+
+            console.log(salaries);
+
+            for (var i = 0; i < salaries.length; i = i + 1) {
+                var old = salaries[i];
+                salaries[i] = old + (old * .05);
+            }
+
+            console.log(salaries);
+
+
+ 
 
         </script>
     </body>
