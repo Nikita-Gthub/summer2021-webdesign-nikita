@@ -5,31 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Working with Forms</title>
 
-    <style>
+    <!--Computer works in milliseconds. 1000 milliseconds = 1 second.-->
 
-    </style>
 </head>
 <body>
+    <form action=""></form>
 
-    <form>
+    <form id="signup">
         <label for="fname">First Name:</label>
         <input type="text" name="fname" id="fname" />
-        <input type="button" value="Press Me!" />
+        <input type="button" value="Press Me!" id="mybutton" />
 
         <p>Add to Mailing List?</p>
         <label for="mailinglist1">Yep</label>
         <input type="radio" name="mailinglist" value="Yep" id="mailinglist1"/>
         <label for="mailinglist2">Nah</label>
-        <input type="radio" name="mailinglist" value="Nah" id="mailinglist2"/>
-
+        <input type="radio" name="mailinglist" value="Nah" id="mailinglist2" checked/>
         <br />  <!--br- break, start a new line-->
+
         <input type="checkbox" name="eula" value="yes" />
         <label for="eula">Check to agree to EULA </label>
         <br />  <!--br- break, start a new line-->
+
         <input type="reset" />
         <input type="submit" />
-
     </form>
+
+    <p id="output"></p>
+
+    <script> // JS can appera the head or body section, the only difference is what runs first: html or JS. Generally, we put them in the body.
+
+        /* Asynchronous JavaScript. Code runs "Independently" of each other.
+        setTimeout(what code to run, how long); */
+
+        // var myFunction = function () {
+        //     console.log("Hello");
+        // };
+
+        // Asynchronous JavaScript. Code runs "Independently" of each other.
+
+        // setTimeout(myFunction, 3000);
+
+
+        // setTimeout(function () {
+        //     console.log("goodbye!");
+        // }, 4000);
+
+        // Global variable, document represents the entire web page. This is how you select them by their id.
+        var myButton = document.getElementById("mybutton"); // Gets the Press Me button object.
+
+        // Tells JS to "listen" for a "click" on the Press Me button. When clicked, run the function that we defined as the second argument.
+        myButton.addEventListener("click", function () {
+            
+            // Grab the entire form with the ID of signup.
+            var myForm = document.getElementById("signup");
+
+            // No longer used to interact with the user.
+            //alert("Welcome to my website, no viruses I promise!");
+
+            // Grab the input with the name of "fname"
+            var myTextBox = myForm.elements["fname"];
+            // Grab the value of that input we selected.
+            // NOTE: any value that is from the outside of JS will ALWAYS be a string.
+            var userInput = myTextBox.value;
+
+            // Add exlamation points to our variable value.
+            userInput = userInput + "!!!";
+            
+            // Select the element with the ID of output.
+            var paragraph = document.getElementById("output");
+
+            // Set the inner HTML of that element we selected.
+            paragraph.innerHTML = userInput;
+        });
+
+
+        ;;; // ending of JS
+    </script>
     
 </body>
-</html>
+</html>     
+
+
+
+
+
