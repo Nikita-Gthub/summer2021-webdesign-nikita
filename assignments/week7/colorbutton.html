@@ -21,9 +21,9 @@
             var redColor = Math.floor(Math.random() * 256);
             var greenColor = Math.floor(Math.random() * 256);
             var blueColor = Math.floor(Math.random() * 256);
-
+            // rgb is a valid color format for CSS
             var color = "rgb(" + redColor + "," + greenColor + ","+ blueColor + ")";
-
+            //  In CSS it's background-color, while JS DOM it's backgroundColor.
             console.log(color);
             document.getElementById("colorcode").innerHTML = color;
             document.body.style.backgroundColor = color;
