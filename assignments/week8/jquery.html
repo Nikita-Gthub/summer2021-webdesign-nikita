@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to jQuery</title>
-
+    <!--put jQuery source=src and in the same folder with this html-->
     <script src="jquery-3.6.0.min.js"></script>
 
     <style>
@@ -20,10 +20,10 @@
 
 </head>
 <body>
-
+    <!--inline attrubute = 1000 specificity override css -->
     <button id="darkmode">Dark Mode</button>
     <button id="lightmode">Light Mode</button>
-    <br />
+    <br />  <!--break tag -->
     <label for="number1">First Number</label>
     <input type="number" id="number1" />
     <br />
@@ -37,7 +37,8 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas aperiam illum temporibus perspiciatis nam laudantium ab perferendis, totam a fugiat, nulla laboriosam excepturi dolores soluta. Molestias laudantium cumque consequatur?</p>
 
-    <script>  // $ is jQuery's nickname. $() equates to jQuery().
+    <script> // Anything enters JS is a string and outside of JS is text.
+        // $ is jQuery's nickname. $() equates to jQuery().
 
         // Math.random(); // 0 - .9~; Never actually reaches 1.
 
@@ -82,6 +83,8 @@
         // Make sure you have Document Ready statement for jQuery.
         // $() is the jQuery function, you can also write jQuery();
         // DEPRECATED: $(document).ready(function () {});
+
+        $(function)
 
         $(function () {
 
