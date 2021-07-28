@@ -1,3 +1,24 @@
+I’m planning to use bright and light colors to create a concise style for my portfolio. 
+The colors that I prefer to use are   #F5FC7E   #AEE0A6  for the body,    #88F7C5  for header,                    #70CBE0  #7E96FC  for the text, and  white  for background.
+
+Images: my portrait on the Home page and several icons:
+︁︁👤︁      ✉︁        📞︁     ︁︁︁ ︁︁
+
+
+Font-family: 'PT Serif', serif;
+URL https://fonts.google.com/specimen/PT+Serif?preview.text=%3Ch2%3E%20Introduction%20-%20a%20little%20bit%20about%20me%20%3C%2Fh2%3E&preview.text_type=custom
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+Font sizes: 
+H1  42px
+H2  36px
+H3  30px
+P   24px
+
+
 THE ABOUT ME PAGE (HOME PAGE)
 
 <h1>Portoflio Home Page</h1>
@@ -27,17 +48,18 @@ The people’s Republic of China.
 
 THE CONTACT PAGE 
 
-<h1>Contact Information</h1>
 
-Email: nikita62352@gmail.com
+<h1>Contact Information</h1> (Apply icons for below information)
 
-Phone number: 510-426-2352
+<i class="email"></i>    nikita62352@gmail.com
 
-Address: Berkeley, CA
+<i class="phone number"></i>  510-426-2352
 
-Webpage: 
+<i class="address"></i>Berkeley, CA
 
-GitHub: https://github.com/Nikita-Gthub
+<i class="webpage"></i>
+
+<i class="GitHub"></i> https://github.com/Nikita-Gthub
 
 
 
