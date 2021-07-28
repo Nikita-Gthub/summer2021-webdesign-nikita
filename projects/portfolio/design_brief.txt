@@ -1,3 +1,17 @@
+My notes for simple portfolio examples
+Example 1 https://www.belancio.com/
+Like: I like the greet section at the beginning, it feels so welcoming. I like its concise style and all the colors maching with the theme. It's easy for visiter to browse the content they need. 
+Dislike: A little bit too much blank space on the home page. The size of pictures are too lager, it's hard to see the entir of them. Mennue button is invisible at the very bottom.
+
+Example 2  https://www.julianweidenthaler.com/
+Like: I like the backgroud color and the use of low saturated color conbination. The font size and font famaliy are very suitable. 
+Dislike: There are many content in the home page and they are flashing makes me disoriented and kind of dizzy. I couldn't find the main purples of this site when I first glance at it.
+
+Example 3 http://www.hangar.co/http://www.hangar.co/
+Like: The design of this site attrats my eyeballs. It changes the photos automatically. The web pages are orgnized very instructive. Menu and all function keys are easy to find.
+Dislike: Only thing I've notice for this one is the font size is small not very easy for visiters to read the content. 
+
+
 I’m planning to use bright and light colors to create a concise style for my portfolio. 
 The colors that I prefer to use are   #F5FC7E   #AEE0A6  for the body,    #88F7C5  for header,                    #70CBE0  #7E96FC  for the text, and  white  for background.
 
