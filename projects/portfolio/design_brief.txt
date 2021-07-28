@@ -1,0 +1,57 @@
+THE ABOUT ME PAGE (HOME PAGE)
+
+<h1>Portoflio Home Page</h1>
+
+<h2> Introduction - a little bit about me </h2>
+
+<h3> Greeting: Hello, everyone! Welcome to my first portfolio~! </h3> 
+
+<p> My name is Nikita. I’m a college freshman trying to orient my major. Currently, I’m attending prerequisite courses at college, meanwhile, I’m taking a Summer Bootcamp held by Mission Economic Development Agency (MEDA) studying introduction to Webdesign. As a novice, this’s a challenge for me because the course pace is intensive and I don’t have any computer science or coding background. Nevertheless, I’m interested in the tech industry, and I love learning new things. In addition, our instructor made the course engaging and practical. Mentors, fellows are very supportive. Therefore, I enjoy being in this online session and my technical skills are improving as I go.</p>
+
+<h2> Resume Summary </h2>
+<p>Working knowledge of Microsoft Word software. Able to work efficiently independently and as a team member – well-organized, thorough, adaptable to fast-paced work environments – manage and prioritize multiple projects adhering to deadlines. </p>
+
+<h2> Training & Certificate</h2>
+MEDA 2021 Summer Bootcamp Introduction to Webdesign
+CIS 205 Computer Literacy
+Certificate of CASAS eTests Proctor Online Training
+Certificate of Microsoft Word and Excel 108 hours Training
+
+<h2>Education </h2>
+College in Progress, Completing general education requirement courses, Berkeley, CA 
+High School Diploma, Berkeley Adult School, Berkeley, CA.
+Bachelor Degree Equivalency, Major in Education, Qingdao University, Qingdao,
+The people’s Republic of China.
+
+
+
+THE CONTACT PAGE 
+
+<h1>Contact Information</h1>
+
+Email: nikita62352@gmail.com
+
+Phone number: 510-426-2352
+
+Address: Berkeley, CA
+
+Webpage: 
+
+GitHub: https://github.com/Nikita-Gthub
+
+
+
+THE PROJECTS PAGE 
+
+<h1>Projects</h1>
+
+Portfolio: this webpage
+My hobby webpage
+
+<h2>Skills Section (envision my future skills)</h2>
+
+HTML5     CSS     JavaScirpt    jQuery   Adobe   Photoshop    Microsoft Office
+
+<h2>Postscript or Epilogue or Ending </h2>
+
+<p>Althouth I start from scratch, I’m a glutton for punishment and eager to learn. I hope that after you take the time to review my portfolio and resume, I will be able to meet with you and learn more about the requirements and responsibilities of this position. Thank you for visiting my website~! </p>
