@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@100&display=swap');
+/*import must be on the top */
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+#container {
+    width: 1200px;
+    margin: 0 auto; /* put them in the center */
+
+}
+
+header {
+    overflow: auto;
+    background-color:#F5FC7E;
+    color: #7E96FC;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 72px;
+}
+nav ul {
+    border: 1px solid whitesmoke;
+    text-align: right;
+}
+nav ul li {
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 20px; 
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li a:link {
+    color:#7E96FC;
+}
+/*Pseudo classes are commenly used for anchor element */
+nav ul li a:hover { 
+    color:#4768fc;
+}
+nav ul li a:active {
+    color: #88F7C5;
+}
+nav ul li a:visited {
+    color: #70CBE0;
+}
+
+main {
+    background-color: #AEE0A6;
+    overflow: auto;
+    padding: 320px;
+}
+main#gallery img {
+    width: 195px;
+    margin: 5px;
+}
+
+footer {
+    overflow: auto;
+    background-color:#F5FC7E;
+    color: #7E96FC;
+    text-align: center;
+    font-size: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
